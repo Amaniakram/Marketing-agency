@@ -6,20 +6,22 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 5px beige;
-    background-color:rgba(20, 186, 252, 0.171); 
-    color: black;
-    text-align: left;
+    background-color: #33333359;
+    color: #691d1d;
     padding: 15px;
-    margin: 2px;
+   margin: 10px;
 }
 
-nav {
-    display: inline-block;
-    margin: 0 10px;
-    color: black;
-    text-decoration: none;
-    font-weight: 20px;
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    
 }
 
 section {
@@ -28,26 +30,20 @@ section {
     padding: 10px;
     margin: 20px;
     border-top: 4px solid rgb(193, 188, 214);
+    flex: 3;
 }
 
 img {
-    width: 100px;
-    height: auto;
+    width: 200px;
+    height: 200px ;
     display: inline;
     margin: 20px auto;
 }
-
-box {
-    padding: 10px;
-    margin: 10px;
-    background-color: cornflowerblue;
-    color: aquamarine;
-    text-align: left;
-    border: 2px solid rosybrown;
-    box-sizing: border-box;
-    font-size: 15px;
-    position: relative;
+.hero img {
+    width: 100%;
+    height: auto;
 }
+
 
 form {
     display: flex;
@@ -64,15 +60,22 @@ button {
     width: 100%;
     padding: 5px;
     margin: auto;
-    border: radius 10px; 
+    border-radius: 10px; 
     display: inline;
     text-align: center;
 }
+main{ 
+    display: flex;
+    gap: 20px;
+}
+aside {
+    flex: 1;
+}
 
 footer {
-    position: absolute;
-    margin-top: 0;
-    bottom: 0;
-    border-bottom: 10px solid black;
-    color: black;
+   text-align: center;
+   padding: 20px;
+   background-color: #333;
+   color: white;
+   position: static;
 }
